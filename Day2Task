@@ -1,0 +1,19 @@
+#1
+res = []
+def names(x):
+    for i in x:
+        res.append((i.upper(),len(i)))
+    return res
+print(names(['Alex','John','Smith']))
+
+
+
+
+#2
+res1 = []
+def num(x):
+    for i in x.split():
+        if i.isnumeric():
+            res1.append(int(i))
+    return res1
+print(num('In 1984 there were 13 instances of a protest with over 1000 people attending'))
